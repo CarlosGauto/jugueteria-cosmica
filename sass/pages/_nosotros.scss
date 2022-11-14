@@ -1,0 +1,75 @@
+.nosotros-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+
+  .star-wars-intro-main {
+    margin: 1em auto;
+    width: 500px;
+    background-image: url(/img/1920x1080-Star-Wars-Space-Fondo.jpg);
+    background-size: contain;
+    min-width: 320px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    cursor: none;
+    & .star-wars-intro__text-container.play {
+      transition: all 20s ease;
+      top: -1100px;
+    }
+  }
+
+  .star-wars-intro__text-container {
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 95%;
+    top: 100%;
+    bottom: 0;
+    position: absolute;
+    font-family: "Dela Gothic One", cursive;
+    text-align: center;
+    font-size: 200%;
+    color: yellow;
+    
+
+    h1 {
+      font-family: "Pacifico", cursive;
+      color: red;
+      text-align: center;
+      background-image: url(/img/nave.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+    }
+  }
+  textarea{
+    width: 70%;
+    border-radius: 20px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-family: "Calibri", cursive;
+  }
+  button{
+    padding: 0.5em 1.5em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    font-family: "Calibri", cursive;
+    color: white;
+    background-color: grey;
+    font-size: 1.2em;
+    &:hover{
+      background-color: #ed6464;
+      color: white;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  
+}

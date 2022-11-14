@@ -1,0 +1,135 @@
+.contact-form {
+  background-color: #00316d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border: solid;
+  border-radius: 20px;
+  text-align: start;
+  font-size: 1em;
+  align-items: center;
+  width: 90%;
+
+  @media (min-width: 425px) {
+    font-size: 1.3em;
+    width: 70%;
+  }
+  @media (min-width: 768px) {
+    font-size: 1.5em;
+    width: 65%;
+  }
+
+  #comment {
+    border: 1px solid;
+    border-radius: 10px;
+    resize: none;
+    max-height: 200px;
+    width: 80%;
+    margin: auto;
+
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+  }
+
+  &__input-container {
+    margin-top: 0.3em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    input {
+      margin-top: 0.1em;
+      margin-bottom: 0.1em;
+      border-radius: 10px;
+      font-size: 0.8em;
+      padding: 0.2em;
+    }
+    label {
+      margin-top: 0.4em;
+      font-size: 0.8em;
+    }
+
+    .input-error {
+      display: none;
+    }
+
+    &.error .input-error {
+      border-radius: 10px;
+      font-size: 0.8em;
+      display: block;
+      background-color: red;
+      text-align: center;
+      margin: 0.1em auto;
+      width: 80%;
+      @media (min-width: 768px) {
+        width: 60%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+  }
+
+  #btnSubmitContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #button-submit {
+      border-radius: 10px;
+      margin-top: 1em;
+      width: 10em;
+      height: 2em;
+      &:hover {
+        background-color: rgba(0, 214, 0, 0.575);
+        color: white;
+      }
+    }
+  }
+}
+
+.section-contact-form {
+  padding-top: 0;
+  display: flex;
+  margin: 1em auto;
+  width: 95%;
+  max-width: 1420px;
+  font-family: "Century Gothic", cursive;
+  font-weight: 100;
+  font-size: 1.2em;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__header{
+    border-radius: 10px;
+    font-size: 0.9em;
+    background-color: #00316d;
+    color: white;
+    border: white solid 2px;
+    outline: none;
+    padding: 0 1.5em;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0.1em auto 3em auto;
+  }
+
+  &__header {
+    margin-top: 0;
+    @media (min-width: 768px) {
+      margin-top: 1em;
+    }
+  }
+}
+
+.contact-form-container {
+  font-size: 1.3em;
+  font-family: "Calibri", cursive;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

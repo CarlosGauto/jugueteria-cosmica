@@ -1,0 +1,37 @@
+.section-products-table{
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        border: solid;
+        height: 60vh;
+        width:  100vh;
+        flex-direction: column;
+        margin-top: 3em;
+        background-color: white;
+        font-family: "Century Gothic", cursive;
+        overflow-y: scroll;
+        border-radius: 20px;
+        
+        h2{
+            text-align: center;
+        }
+
+        .products-table-container{
+            
+            .table-products{
+                width: 100%;
+                th, td{
+                    border-bottom: 1px solid black;
+                    border-collapse: collapse;
+                    padding: 1em;
+                    text-align: center;
+                }
+
+            }
+        }
+
+    }
+        
+
+}

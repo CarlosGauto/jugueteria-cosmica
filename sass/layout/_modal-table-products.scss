@@ -1,0 +1,81 @@
+.modalContainer {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  font-family: "Calibri", serif;
+  left: 0;
+  right: 0;
+
+  @media (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btn-close-modal{
+    margin-top: 0.5em;
+  }
+
+  &.close {
+    display: none;
+  }
+
+  .modal {
+    margin: 0 auto;
+    font-size: 0.7em;
+    text-align: center;
+    height: 50%;
+    width: 90%;
+    background-color: rgba(0, 153, 255, 0.986);
+    border-radius: 30px;
+    @media (min-width: 768px) {
+      font-size: 1em;
+    }
+    @media (min-width: 520px) {
+      font-size: 0.9em;
+    }
+    .modal-products {
+      width: 90%;
+      margin: 0px auto;
+      background-color: rgba(255, 0, 0, 0);
+      font-size: 1em;
+
+      .table-cart-products {
+        width: 100%;
+
+        th,
+        td {
+          border-bottom: 1px solid black;
+          border-collapse: collapse;
+          padding: 1em;
+          text-align: center;
+        }
+
+        & .cell-img img {
+          
+          width: 100%;
+
+          @media (min-width: 500px) {
+            width: 30%;
+          }
+
+          @media (min-width: 768px) {
+            width: 15%;
+          }
+        }
+      }
+
+      .btn-buy {
+        margin: 1em;
+        background-color: #ed6464;
+        color: white;
+        outline: none;
+        border-radius: 30px;
+        &:hover,
+        &:focus {
+          background-color: #8bed64;
+          outline: none;
+        }
+      }
+    }
+  }
+}

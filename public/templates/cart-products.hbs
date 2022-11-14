@@ -1,0 +1,32 @@
+{{#if content.length }}
+    <table class="table-cart-products">
+        <thead>
+            <tr>
+                <th scope="column">Imagen</th>
+                <th scope="column">Nombre</th>
+                <th scope="column">Precio</th>
+                <th scope="column">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each content}}
+                <tr data-id="{{id}}">
+                    <td class="cell-img"> <img src="/img/juguetes/{{imgurl}}"></td>
+                    <td class="cell-name">{{name}}</td>
+                    <td class="cell-price">${{total}}</td>
+                    <td>
+                        <button class="btn-delete">❌</button>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">El total a pagar es de ${{total}}</td>
+            </tr>
+        </tfoot>
+    </table>
+    <button id = "btnBuy" class="btn-buy">Comprar</button>
+{{else}}
+    <p>Tu carrito de Compras esta Vacio</p>
+{{/if}}

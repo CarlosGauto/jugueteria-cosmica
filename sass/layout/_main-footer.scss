@@ -1,0 +1,72 @@
+.main-footer {
+  min-width: 320px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  margin: auto;
+  @media (min-width: 768px) {
+    max-width: 1440px;
+    box-shadow: none;
+  }
+
+  &__jugueteria-p {
+    font-size: 0.8em;
+    margin-top: -0.1em;
+    font-family: "Shadows Into Light", cursive;
+    @media (min-width: 768px) {
+      font-size: 0.1em;
+    }
+  }
+
+  &__cosmica-p {
+    font-family: "Pacifico", cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+    color: black;
+
+    @media (min-width: 425px) {
+      font-size: 0.1em;
+    }
+    @media (min-width: 768px) {
+      font-size: 0.1em;
+    }
+  }
+
+  &__logo-container {
+    margin: auto;
+    border-radius: 20% 20% 0 0;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.6em;
+    padding-top: 1em;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    cursor: pointer;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &__social-media {
+    background-color: #ed6464;
+    margin-top: 0;
+    padding: 1em;
+    display: flex;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+  }
+
+  &__logo-social-media {
+    margin-left: 1em;
+    margin-right: 0.5em;
+    width: 2em;
+    cursor: pointer;
+  }
+  p {
+    margin-left: 1em;
+    font-family: "Pacifico", cursive;
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,34 @@
+{{#if products.length}}
+{{#each products}}
+<div class="card">
+          <article class="card__article">
+            <div class="card__image-container">
+              <img
+                src='/img/juguetes/{{imgurl}}'
+                alt="Producto"
+                class="card__image"
+              />
+            </div>
+            <div class="card__content">
+              <h2 class="card__heading">
+                {{name}}
+              </h2>
+
+              <div class="card__description">
+                <p class="shortdesc">
+                  {{shortdesc}}
+                </p>
+                <p class="longdesc">
+                  {{longdesc}}
+                </p>
+              </div>
+              <div class="card__price">$ {{price}}</div>
+              <a class="card__link" data-product-id = "{{_id}}">Comprar</a>
+            </div>
+          </article>
+        </div>
+
+{{/each}}
+{{else}}
+<h2>No se encontraron productos</h2>
+{{/if}}

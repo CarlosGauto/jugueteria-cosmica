@@ -1,0 +1,23 @@
+@use "base/_normalize.scss";
+@use "base/_reset.scss";
+@use "base/_utilities.scss";
+
+@use "layout/_hamburger-button.scss";
+@use "layout/_main-header.scss";
+@use "layout/main-footer.scss";
+@use "layout/_main-nav.scss";
+@use "layout/_main-nav-toggle.scss";
+@use "layout/new-product-form";
+@use "layout/contact-form";
+@use "layout/body";
+@use "layout/_modal-table-products";
+@use "layout/_section-products-table";
+
+@use "components/_card.scss";
+
+@use "pages/_index.scss";
+@use "pages/nosotros.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");

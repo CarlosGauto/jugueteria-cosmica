@@ -1,0 +1,33 @@
+.main-nav-toggle {
+  display: none;
+}
+
+.main-nav-toggle:checked
+  ~ .main-header
+  .main-header__main-nav-container
+  .main-nav {
+  visibility: visible;
+  font-size: 1em;
+  right: 0;
+}
+
+.main-nav-toggle:checked
+  ~ .main-header
+  .main-header__hamburger-button-container {
+  & .hamburger-button {
+    &__top-bread {
+      background-color: red;
+      transform: translateY(200%) rotate(45deg);
+    }
+
+    &__meat {
+      background-color: black;
+      width: 90%;
+      height: 0.2em;
+    }
+    &__bottom-bread {
+      background-color: red;
+      transform: translateY(-200%) rotate(-45deg);
+    }
+  }
+}

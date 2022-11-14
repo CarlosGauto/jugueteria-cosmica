@@ -1,0 +1,113 @@
+.new-product-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: #00316d;
+  color: white;
+  border: solid;
+  padding: 1em 0.1em;
+  border-radius: 30px;
+  font-size: 1em;
+
+  @media (min-width: 768px) {
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.75);
+    padding: 1.5em 1.5em;
+    width: 80%;
+  }
+
+  &__input-container {
+    margin-top: 0.8em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    & input {
+      border-radius: 15px;
+      padding: 0.3em;
+    }
+
+    & .input-number {
+      width: 40%;
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+    }
+
+    .input-error {
+      display: none;
+      text-align: center;
+      border-radius: 15px;
+      width: 90%;
+      font-size: 0.8em;
+      padding: 0.3em;
+      margin-top: 0.2em;
+    }
+
+    &.error .input-error {
+      display: block;
+      background-color: #ed6464;
+    }
+  }
+
+  & .age-container {
+    label {
+      margin-bottom: 0.7em;
+    }
+
+    & .age-input {
+      margin-bottom: 0.3em;
+      margin-top: 0.3em;
+    }
+  }
+
+  #longdesc {
+    max-width: 100%;
+    width: 90%;
+    border-radius: 0 30px 0 30px;
+    resize: none;
+    padding: 0.3em;
+  }
+
+  .button-form {
+    margin: 1em auto;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 214, 0, 0.575);
+      color: white;
+    }
+  }
+}
+
+.section-form {
+  padding-top: 0;
+  display: flex;
+  margin: 1em auto;
+  width: 95%;
+  max-width: 1420px;
+  font-family: "Century Gothic", cursive;
+  font-weight: 100;
+  font-size: 1.2em;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  
+  &__header{
+    border-radius: 10px;
+    font-size: 0.9em;
+    background-color: #00316d;
+    color: white;
+    border: white solid 2px;
+    outline: none;
+    padding: 0 1.5em;
+  }
+
+  @media (min-width: 768px) {
+    overflow: visible;
+    margin: 1em auto 3em;
+  }
+}
